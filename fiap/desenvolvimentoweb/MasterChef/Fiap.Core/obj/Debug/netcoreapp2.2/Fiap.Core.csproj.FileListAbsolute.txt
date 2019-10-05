@@ -1,9 +1,0 @@
-D:\fp_19_2_web_aula_5\Fiap.Core\bin\Debug\netcoreapp2.2\Fiap.Core.deps.json
-D:\fp_19_2_web_aula_5\Fiap.Core\bin\Debug\netcoreapp2.2\Fiap.Core.dll
-D:\fp_19_2_web_aula_5\Fiap.Core\bin\Debug\netcoreapp2.2\Fiap.Core.pdb
-D:\fp_19_2_web_aula_5\Fiap.Core\obj\Debug\netcoreapp2.2\Fiap.Core.csprojAssemblyReference.cache
-D:\fp_19_2_web_aula_5\Fiap.Core\obj\Debug\netcoreapp2.2\Fiap.Core.csproj.CoreCompileInputs.cache
-D:\fp_19_2_web_aula_5\Fiap.Core\obj\Debug\netcoreapp2.2\Fiap.Core.AssemblyInfoInputs.cache
-D:\fp_19_2_web_aula_5\Fiap.Core\obj\Debug\netcoreapp2.2\Fiap.Core.AssemblyInfo.cs
-D:\fp_19_2_web_aula_5\Fiap.Core\obj\Debug\netcoreapp2.2\Fiap.Core.dll
-D:\fp_19_2_web_aula_5\Fiap.Core\obj\Debug\netcoreapp2.2\Fiap.Core.pdb
