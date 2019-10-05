@@ -1,0 +1,170 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap/Fiap.csproj": {}
+  },
+  "projects": {
+    "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/Fiap.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/Fiap.Core.csproj",
+        "projectName": "Fiap.Core",
+        "projectPath": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/Fiap.Core.csproj",
+        "packagesPath": "/Users/gregory/.nuget/packages/",
+        "outputPath": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/gregory/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "CodeHollow.FeedReader": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.6.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap/Fiap.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap/Fiap.csproj",
+        "projectName": "Fiap",
+        "projectPath": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap/Fiap.csproj",
+        "packagesPath": "/Users/gregory/.nuget/packages/",
+        "outputPath": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/gregory/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/Fiap.Core.csproj": {
+                "projectPath": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/Fiap.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "CodeHollow.FeedReader": {
+              "target": "Package",
+              "version": "[1.2.1, )"
+            },
+            "Microsoft.ASPNETCore.All": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.6.10, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Serilog.Sinks.Logentries": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
