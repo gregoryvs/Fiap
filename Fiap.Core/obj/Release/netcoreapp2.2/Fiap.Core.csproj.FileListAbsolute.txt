@@ -1,8 +1,9 @@
-/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/bin/Release/netcoreapp2.2/Fiap.Core.deps.json
-/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/bin/Release/netcoreapp2.2/Fiap.Core.dll
-/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/bin/Release/netcoreapp2.2/Fiap.Core.pdb
-/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/obj/Release/netcoreapp2.2/Fiap.Core.csprojAssemblyReference.cache
-/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/obj/Release/netcoreapp2.2/Fiap.Core.AssemblyInfoInputs.cache
-/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/obj/Release/netcoreapp2.2/Fiap.Core.AssemblyInfo.cs
-/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/obj/Release/netcoreapp2.2/Fiap.Core.dll
-/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/obj/Release/netcoreapp2.2/Fiap.Core.pdb
+D:\fp_19_2_web_aula_5\Fiap.Core\bin\Release\netcoreapp2.2\Fiap.Core.deps.json
+D:\fp_19_2_web_aula_5\Fiap.Core\bin\Release\netcoreapp2.2\Fiap.Core.dll
+D:\fp_19_2_web_aula_5\Fiap.Core\bin\Release\netcoreapp2.2\Fiap.Core.pdb
+D:\fp_19_2_web_aula_5\Fiap.Core\obj\Release\netcoreapp2.2\Fiap.Core.csprojAssemblyReference.cache
+D:\fp_19_2_web_aula_5\Fiap.Core\obj\Release\netcoreapp2.2\Fiap.Core.csproj.CoreCompileInputs.cache
+D:\fp_19_2_web_aula_5\Fiap.Core\obj\Release\netcoreapp2.2\Fiap.Core.AssemblyInfoInputs.cache
+D:\fp_19_2_web_aula_5\Fiap.Core\obj\Release\netcoreapp2.2\Fiap.Core.AssemblyInfo.cs
+D:\fp_19_2_web_aula_5\Fiap.Core\obj\Release\netcoreapp2.2\Fiap.Core.dll
+D:\fp_19_2_web_aula_5\Fiap.Core\obj\Release\netcoreapp2.2\Fiap.Core.pdb

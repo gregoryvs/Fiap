@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap/Fiap.csproj": {}
+    "D:\\fp_19_2_web_aula_5\\Fiap\\Fiap.csproj": {}
   },
   "projects": {
-    "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/Fiap.Core.csproj": {
+    "D:\\fp_19_2_web_aula_5\\Fiap.Core\\Fiap.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/Fiap.Core.csproj",
+        "projectUniqueName": "D:\\fp_19_2_web_aula_5\\Fiap.Core\\Fiap.Core.csproj",
         "projectName": "Fiap.Core",
-        "projectPath": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/Fiap.Core.csproj",
-        "packagesPath": "/Users/gregory/.nuget/packages/",
-        "outputPath": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/obj/",
+        "projectPath": "D:\\fp_19_2_web_aula_5\\Fiap.Core\\Fiap.Core.csproj",
+        "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
+        "outputPath": "D:\\fp_19_2_web_aula_5\\Fiap.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/gregory/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\logonrmlocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,37 +71,40 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     },
-    "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap/Fiap.csproj": {
+    "D:\\fp_19_2_web_aula_5\\Fiap\\Fiap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap/Fiap.csproj",
+        "projectUniqueName": "D:\\fp_19_2_web_aula_5\\Fiap\\Fiap.csproj",
         "projectName": "Fiap",
-        "projectPath": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap/Fiap.csproj",
-        "packagesPath": "/Users/gregory/.nuget/packages/",
-        "outputPath": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap/obj/",
+        "projectPath": "D:\\fp_19_2_web_aula_5\\Fiap\\Fiap.csproj",
+        "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
+        "outputPath": "D:\\fp_19_2_web_aula_5\\Fiap\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/gregory/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\logonrmlocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/Fiap.Core.csproj": {
-                "projectPath": "/Users/gregory/Documents/bitbucket/fiap/desenvolvimentoweb/MasterChef/aula5/fp_19_2_web_aula_5/Fiap.Core/Fiap.Core.csproj"
+              "D:\\fp_19_2_web_aula_5\\Fiap.Core\\Fiap.Core.csproj": {
+                "projectPath": "D:\\fp_19_2_web_aula_5\\Fiap.Core\\Fiap.Core.csproj"
               }
             }
           }
@@ -161,8 +168,7 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }
