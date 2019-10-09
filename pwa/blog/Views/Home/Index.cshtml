@@ -1,13 +1,4 @@
-﻿<!-- @{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div> -->
-
-
+﻿
 <div class="blog-list card-columns" id="blog-list"></div>
 
 <script id="blog-card" type="text/template">
@@ -17,4 +8,12 @@
             <p class="card-text">{{ShortDescription}}</p> <button class="btn btn-primary">ir</button>
         </div>
     </div>
+</script>
+
+
+<div id="blog-item-container"></div>
+    <script id="blog-item" type="text/template"> <div id="{{Link}}" class="blog-item">
+    {{Content}} 
+</div>
+    <a href="#blog-title" class="btn btn-primary">voltar</a>
 </script>

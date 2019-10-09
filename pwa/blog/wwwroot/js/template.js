@@ -17,6 +17,6 @@
     }
     return {
         appendBlogList: appendBlogList,
-        showBlogItem: showBlogItem
+        //showBlogItem: showBlogItem
     }
 });

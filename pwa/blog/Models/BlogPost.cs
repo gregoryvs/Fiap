@@ -2,7 +2,7 @@
 
 using MakiBlog.Extensions;
 
-namespace src.Models
+namespace blog.Models
 {
     public class BlogPost
     {
