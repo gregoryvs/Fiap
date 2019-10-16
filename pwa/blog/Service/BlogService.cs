@@ -22,8 +22,7 @@ namespace blog.Controllers
         }
         public string GetPostText(string link)
         {
-            var post = Posts.FirstOrDefault(_ => _.Link ==
-    link);
+            var post = Posts.FirstOrDefault(_ => _.Link == link);
             return File.ReadAllText(
             $"{_env.ContentRootPath}/Posts/{post.PostId}_post.md");
         }

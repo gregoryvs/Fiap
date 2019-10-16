@@ -1,15 +1,19 @@
-﻿
-<div class="blog-list card-columns" id="blog-list"></div>
+﻿<div class="blog-list card-columns" id="blog-list"></div>
+
+<div class="center">
+    <button class="btn btn-primary" onclick="pageEvents.loadMoreBlogPosts();">ver mais</button>
+    <br /><br />
+</div>
 
 <script id="blog-card" type="text/template">
     <div class="card">
         <div class="card-body">
             <h5 class="card-title"> {{PostId}} - {{Title}}</h5>
-            <p class="card-text">{{ShortDescription}}</p> <button class="btn btn-primary">ir</button>
+            <p class="card-text">{{ShortDescription}}</p> 
+             <button onclick="pageEvents.loadBlogPost('{{Link}}');" class="btn btn-primary">ir</button>
         </div>
     </div>
 </script>
-
 
 <div id="blog-item-container"></div>
     <script id="blog-item" type="text/template"> <div id="{{Link}}" class="blog-item">

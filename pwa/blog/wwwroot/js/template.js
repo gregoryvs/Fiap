@@ -15,8 +15,16 @@
         }
         $('.blog-list').append(cardHtml);
     }
+
+    function showBlogItem(html, link) {
+        var template = $('#blog-item').html();
+        template = template.replace('{{Link}}', link);
+        template = template.replace('{{Content}}', html);
+        $('#blog-item-container').html(template);
+    }
+
     return {
         appendBlogList: appendBlogList,
-        //showBlogItem: showBlogItem
+        showBlogItem: showBlogItem
     }
 });

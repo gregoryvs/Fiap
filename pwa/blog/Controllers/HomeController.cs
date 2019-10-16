@@ -11,11 +11,13 @@ namespace blog.Controllers
 {
     public class HomeController : Controller
     {
+        private IBlogService _blogService;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IBlogService blogService)
         {
             _logger = logger;
+            _blogService = blogService;
         }
 
         public IActionResult Index()
@@ -45,6 +47,11 @@ namespace blog.Controllers
                 new BlogPost { PostId = 5, Title = "xxx", ShortDescription = "xxx" }
             };
             return Json(posts);
+        }
+
+        public ContentResult Post(string link)
+        {
+            return Content(_blogService.GetPostText(link));
         }
     }
 }
