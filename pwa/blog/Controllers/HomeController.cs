@@ -53,5 +53,11 @@ namespace blog.Controllers
         {
             return Content(_blogService.GetPostText(link));
         }
+
+        public JsonResult MoreBlogPosts(int oldestBlogPostId)
+        {
+            var posts = _blogService.GetOlderPosts(oldestBlogPostId);
+            return Json(posts);
+        }
     }
 }

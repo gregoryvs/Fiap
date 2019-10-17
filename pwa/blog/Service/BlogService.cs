@@ -30,5 +30,15 @@ namespace blog.Controllers
         {
             return Posts.OrderByDescending(_ => _.PostId).Take(3).ToList();
         }
+
+        public List<BlogPost> GetOlderPosts(int oldestPostId)
+        {
+            var posts = Posts.Where(_ => _.PostId < oldestPostId).OrderByDescending(_ => _.PostId).ToList();
+
+            if (posts.Count < 3)
+                return posts;
+
+            return posts.Take(3).ToList();
+        }
     }
 }

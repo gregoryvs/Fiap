@@ -7,5 +7,6 @@ namespace blog.Controllers
     {
         List<BlogPost> GetLatestPosts();
         string GetPostText(string link);
+        List<BlogPost> GetOlderPosts(int oldestBlogPostId);
     }
 }
