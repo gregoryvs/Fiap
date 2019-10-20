@@ -2,6 +2,7 @@ define([], function () {
     var blogInstance = localforage.createInstance({
         name: 'blog'
     });
+    
     function addPosts(posts) {
         return new Promise(function (resolve, reject) {
             var keyValuePair = [];

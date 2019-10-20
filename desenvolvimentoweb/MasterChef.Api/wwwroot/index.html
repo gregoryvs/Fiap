@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MasterChef</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="/css/flaticon.css">
+    <link rel="stylesheet" href="/css/icomoon.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body class="goto-here">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Masterchef</a>
+        </div>
+    </nav>
+
+    <div class="hero-wrap hero-bread" style="background-image: url('images/bg_1.jpg');">
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-9 ftco-animate text-center">
+                    <h1 class="mb-0 bread">MasterChef</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="ftco-section ftco-degree-bg">
+        <div class="container">
+            <div class="row">    
+                <table>
+                    <tr>
+                        <!-- <th>Título</th>
+                        <th>Descrição</th>
+                        <th>Modo de Preparo</th>
+                        <th></th>
+                        <th></th> -->
+                    </tr>
+                    <tbody id="todos"></tbody>
+                </table>              
+                                          
+            <!-- <h3>Add</h3>
+            <form action="javascript:void(0);" method="POST" onsubmit="addReceita()">
+                <input type="text" id="add-titulo" placeholder="Título">
+                <input type="text" id="add-descricao" placeholder="Descrição">
+                <input type="text" id="add-mododepreparo" placeholder="Modo de Preparo">
+                <input type="submit" value="Add">
+            </form> -->
+
+            <!-- <div id="editForm">
+                <h3>Edit</h3>
+                <form action="javascript:void(0);" onsubmit="updateReceita()">
+                    <input type="hidden" id="edit-id">
+                    <input type="text" id="edit-titulo">
+                    <input type="text" id="edit-descricao">
+                    <input type="text" id="edit-mododepreparo">
+                    <input type="submit" value="Save">
+                    <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+                </form>
+            </div> -->
+
+            <p id="counter"></p>
+            </div>
+
+            <!-- <div id="editForm">
+                <h3>Edit</h3>
+                <form action="javascript:void(0);" onsubmit="updateReceita()">
+                    <input type="hidden" id="edit-id">
+                    <input type="text" id="edit-titulo">
+                    <input type="text" id="edit-descricao">
+                    <input type="text" id="edit-mododepreparo">
+                    <input type="submit" value="Save">
+                    <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+                </form>
+            </div> -->
+
+            <!--Criar -->
+            <div class="comment-form-wrap pt-5">
+                    <h3 class="mb-5">Adicionar</h3>
+                    <form action="javascript:void(0);" method="POST" onsubmit="addReceita()" class="p-5 bg-light">
+                            <div class="form-group">
+                                    <label for="name">Imagem *</label>
+                                    <input type="file"  class="form-control" id="add-imagem">
+                                    </div>
+                        <div class="form-group">
+                        <label for="name">Título *</label>
+                        <input type="text"  class="form-control" id="add-titulo">
+                        </div>
+                        <div class="form-group">
+                        <label for="text">Categoria *</label>
+                        <input type="text" class="form-control" id="add-categoria">
+                        </div>
+                        <div class="form-group">
+                        <label for="text">Descriçao *</label>
+                        <input type="text" class="form-control" id="add-descricao">
+                        </div>
+                        <div class="form-group">
+                        <label for="message">Modo De Preparo</label>
+                        <textarea name="" id="add-mododepreparo" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                        <input type="submit" value="Adicionar" class="btn py-3 px-4 btn-primary">
+                        </div>
+                    </form>
+                </div>
+                <!--Editar-->
+                <div id="editForm">
+                    <div class="comment-form-wrap pt-5">
+                        <h3 class="mb-5">Editar</h3>
+                        <form action="javascript:void(0);" onsubmit="updateReceita()" class="p-5 bg-light">
+                            <input type="hidden" id="edit-id">
+                            <div class="form-group">
+                            <label for="name">Título *</label>
+                            <input type="text"  class="form-control" id="edit-titulo">
+                            </div>
+                            <div class="form-group">
+                            <label for="text">Categoria *</label>
+                            <input type="text" class="form-control" id="edit-categoria">
+                            </div>
+                            <div class="form-group">
+                            <label for="text">Descriçao *</label>
+                            <input type="text" class="form-control" id="edit-descricao">
+                            </div>
+                            <div class="form-group">
+                            <label for="message">Modo De Preparo</label>
+                            <textarea name="" id="edit-mododepreparo" cols="30" rows="10" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                            <input type="submit" value="Salvar" class="btn py-3 px-4 btn-primary">
+                            </div>
+                            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="mouse">
+                              <a href="#" class="mouse-icon">
+                                  <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
+                              </a>
+                          </div>
+                </div>
+              <div class="row mb-5">
+                <div class="col-md">
+                  <div class="ftco-footer-widget mb-4">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+              </div>
+            </div>
+          </footer>
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>      
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getReceitas();
+    </script>
+</body>
+</html>
+
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/site.js" asp-append-version="true"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/js/jquery.easing.1.3.js"></script>
+<script src="/js/jquery.waypoints.min.js"></script>
+<script src="/js/jquery.stellar.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<script src="/js/aos.js"></script>
+<script src="/js/jquery.animateNumber.min.js"></script>
+<script src="/js/bootstrap-datepicker.js"></script>
+<script src="/js/scrollax.min.js"></script>
+<script src="/js/main.js"></script>
