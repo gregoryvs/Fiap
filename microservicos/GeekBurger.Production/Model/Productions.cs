@@ -12,5 +12,4 @@ namespace GeekBurger.Production.Model
         public List<string> Restrictions { get; set; }
         public bool On { get; set; }
     }
-    
 }
