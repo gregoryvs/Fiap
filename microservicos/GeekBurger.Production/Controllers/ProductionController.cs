@@ -16,7 +16,7 @@ namespace GeekBurger.Production.Controllers
            return new Productions
             {
                 ProductionId = guid,
-                Restrictions = new List<string>(){ "soy","dairy","gluten","peanut" },
+                Restrictions = new List<string>() { "soy","dairy","gluten","peanut" },
                 On = false
             };
         }
