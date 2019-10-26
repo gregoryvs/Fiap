@@ -7,8 +7,16 @@
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="blog do greg">
+
 </head>
 <body>
+    <div style="display:none; padding: 5px; text-align:center;" id="install-container">
+        <button onclick="pageEvents.tryAddHomeScreen();" class="btn-link no-style">Clique aqui</button>
+        e adicione Greg Blog na sua home!
+    </div>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
