@@ -5,19 +5,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using blog.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Lib.Net.Http.WebPush;
+using blog.Push;
 
 namespace blog.Controllers
 {
     public class HomeController : Controller
     {
         private IBlogService _blogService;
-        private readonly ILogger<HomeController> _logger;
+        private readonly IPushSubscriptionStore _subscriptionStore;
+        private readonly PushServiceClient _pushClient;
 
-        public HomeController(ILogger<HomeController> logger, IBlogService blogService)
+        public HomeController(IBlogService blogService, IPushSubscriptionStore subscriptionStore, PushServiceClient pushClient)
         {
-            _logger = logger;
             _blogService = blogService;
+            _subscriptionStore = subscriptionStore;
+            _pushClient = pushClient;
         }
 
         public IActionResult Index()
@@ -41,18 +44,6 @@ namespace blog.Controllers
             var posts = _blogService.GetLatestPosts();
             return Json(posts);
         }
-        // public JsonResult LatestBlogPosts()
-        // {
-        //     var posts = new List<BlogPost>() 
-        //     { 
-        //         new BlogPost { PostId = 1, Title = "xxx", ShortDescription = "xxx" },
-        //         new BlogPost { PostId = 2, Title = "xxx", ShortDescription = "xxx" }, 
-        //         new BlogPost { PostId = 3, Title = "xxx", ShortDescription = "xxx" },
-        //         new BlogPost { PostId = 4, Title = "xxx", ShortDescription = "xxx" },
-        //         new BlogPost { PostId = 5, Title = "xxx", ShortDescription = "xxx" }
-        //     };
-        //     return Json(posts);
-        // }
 
         public ContentResult Post(string link)
         {
@@ -63,6 +54,48 @@ namespace blog.Controllers
         {
             var posts = _blogService.GetOlderPosts(oldestBlogPostId);
             return Json(posts);
+        }
+        [HttpGet("publickey")]
+        public ContentResult GetPublicKey()
+        {
+            return Content(_pushClient.DefaultAuthentication.PublicKey, "text/plain");
+        }
+
+        //armazena subscricoes
+        [HttpPost("subscriptions")]
+        public async Task<IActionResult> StoreSubscription([FromBody]PushSubscription subscription)
+        {
+            int res = await _subscriptionStore.StoreSubscriptionAsync(subscription);
+
+            if (res > 0)
+                return CreatedAtAction(nameof(StoreSubscription), subscription);
+
+            return NoContent();
+        }
+
+        [HttpDelete("subscriptions")]
+        public async Task<IActionResult> DiscardSubscription(string endpoint)
+        {
+            await _subscriptionStore.DiscardSubscriptionAsync(endpoint);
+
+            return NoContent();
+        }
+
+        [HttpPost("notifications")]
+        public async Task<IActionResult> SendNotification([FromBody]PushMessageViewModel messageVM)
+        {
+            var message = new PushMessage(messageVM.Notification)
+            {
+                Topic = messageVM.Topic,
+                Urgency = messageVM.Urgency
+            };
+
+            await _subscriptionStore.ForEachSubscriptionAsync((PushSubscription subscription) =>
+            {
+                _pushClient.RequestPushMessageDeliveryAsync(subscription, message);
+            });
+
+            return NoContent();
         }
     }
 }

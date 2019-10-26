@@ -15,6 +15,10 @@ window.addEventListener('appinstalled', (evt) => {
     console.log('app foi adicionada na home screen! Yuhuu!');
 });
 
+if ('BackgroundFetchManager' in self) {
+    console.log('this browser supports Background Fetch!');
+}
+
 window.pageEvents = {
     loadBlogPost: function (link) {
         blogService.loadBlogPost(link);
@@ -63,6 +67,9 @@ window.pageEvents = {
 
             });
         });
+    },
+    requestPushPermission: function () {
+        serviceWorker.requestPushPermission();
     }
 };
 
