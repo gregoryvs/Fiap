@@ -22,8 +22,8 @@ namespace blog
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddPushSubscriptionStore (Configuration)
-                .AddPushNotificationService(Configuration);
+            // services.AddPushSubscriptionStore (Configuration)
+            //     .AddPushNotificationService(Configuration);
 
             services.AddControllersWithViews();
             services.AddSingleton<IBlogService, BlogService>();
@@ -48,11 +48,11 @@ namespace blog
             app.UseAuthorization();
             
             //cria banco de dados SQLite
-            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
-            {
-                PushSubscriptionContext context = serviceScope.ServiceProvider.GetService<PushSubscriptionContext>();
-                context.Database.EnsureCreated();
-            }
+            // using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            // {
+            //     PushSubscriptionContext context = serviceScope.ServiceProvider.GetService<PushSubscriptionContext>();
+            //     context.Database.EnsureCreated();
+            // }
 
             app.UseEndpoints(endpoints =>
             {
