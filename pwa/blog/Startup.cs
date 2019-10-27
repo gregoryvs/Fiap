@@ -22,7 +22,7 @@ namespace blog
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddPushNotificationService (Configuration)
+            services.AddPushSubscriptionStore (Configuration)
                 .AddPushNotificationService(Configuration);
 
             services.AddControllersWithViews();
